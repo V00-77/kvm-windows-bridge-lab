@@ -35,7 +35,24 @@ sudo nmcli con modify br0 ipv4.method disabled
 
 ---
 
-##  Step 2: Connecting the VM to the Switch
+##  Step 2: Fixing the "Logic Gap" (Troubleshooting Hardware)
+Sometimes the host has a "Loose Connection" (like *Wired connection 1*) that holds onto your hardware and prevents the bridge from working. If you see `--` in the device section of `Wired connection 1`, after running => (` nmcli con show`) Then follow this:
+
+### 1. Delete the "Loose" Connection
+```bash
+sudo nmcli con delete "Wired connection 1"
+```
+* **Why:** We need to clear the profile so the hardware (`enp7s0`) is free.
+
+### 2. Enslave the Hardware to the Bridge
+```bash
+sudo nmcli con add type ethernet slave-type bridge con-name br0-port ifname enp7s0 master br0
+```
+* **Why:** This is the "surgery." We are telling the physical hardware: "You no longer report to the OS. You now report to the Switch (`br0`)."
+
+---
+
+##  Step 3: Connecting the VM to the Switch
 1. Open **Virt-Manager** -> VM Settings.
 2. Select the **NIC (Network Interface)**.
 3. Set **Network Source** to `Bridge device...`.
@@ -44,7 +61,12 @@ sudo nmcli con modify br0 ipv4.method disabled
 
 ---
 
-## Step 3: The Windows Driver "An easy way"
+### NOTE:
+After that if the internet didn't work on the VM follow step 4  
+
+
+
+## Step 4: The Windows Driver "An easy way"   ***(Optional)***
 
 ### How to install via Folder/USB:
 1. Copy the `drivers/` folder from this repo to a USB drive and connect it to the VM to take the files from it
@@ -52,7 +74,12 @@ sudo nmcli con modify br0 ipv4.method disabled
 3. Right-click the **Ethernet Controller** (with the yellow warning sign).
 4. Select **Update Driver** -> **Browse my computer for drivers**.
 5. Point it to the `drivers/NetKVM/w11/amd64` folder.
-6. Repeat for the **Display Adapter** using the `drivers/qxldod/w11/amd64` folder.
+
+### Another Note:
+IF you can't change the display resloution then update the drivers of the display adapter the same way from device manager but this time point it to `drivers/qxldod/win10&win11/amd64` folder. 
+
+**The (.zip) file that i attached in this repo has both the `NetKVM` (for network card) and the `qxldod` (for display adapter) folders**
+
 
 ---
 
@@ -74,4 +101,9 @@ WiFi is a "secure tunnel" that only allows **one** MAC address at a time. If the
 ---
 
 ### NOTE;
-(`wlp0s20f3`) and (`enp7s0`) are MY interfaces it will ofc be different for u 
+(`wlp0s20f3`) and (`enp7s0`) are MY interfaces it will usually be  different for u 
+so replace the  (`enp7s0`) in the commands by the name of the ethernet interface of yours
+***And to know the name of the interface run this***
+(`nmcli`)
+
+_the name will normally begine with e (stands for ethernet)_
