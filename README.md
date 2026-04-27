@@ -97,7 +97,7 @@ After that if the internet didn't work on the VM then follow step 4
 ### Another Note:
 IF you can't change the display resloution then update the drivers of the display adapter the same way from device manager but this time point it to `drivers/qxldod/win10&win11/amd64` folder. 
 
-**The (.zip) file that i attached in this repo has both the `NetKVM` (for network card) and the `qxldod` (for display adapter) folders**
+**The (`drivers.zip`) file that i attached in this repo has both the `NetKVM` (for network card) and the `qxldod` (for display adapter) folders**
 
 ---
 
