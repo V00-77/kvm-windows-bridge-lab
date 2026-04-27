@@ -3,6 +3,17 @@
 
 ---
 
+# Important NOTE:
+
+(`wlp0s20f3`) and (`enp7s0`) are MY interfaces it will usually be  different for u 
+so replace the  (`enp7s0`) in the commands by the name of the ethernet interface of yours
+***And to know the name of the interface run this***
+(`nmcli`)
+
+_the name will normally begine with e (stands for ethernet)_
+
+---
+
 ##  The Micro-Logic (The Hardware Flow)
 | Component | Logical Role | The "What For" |
 | :--- | :--- | :--- |
@@ -107,13 +118,4 @@ WiFi is a "secure tunnel" that only allows **one** MAC address at a time. If the
 
 ---
 
-# Important NOTE:
 
-(`wlp0s20f3`) and (`enp7s0`) are MY interfaces it will usually be  different for u 
-so replace the  (`enp7s0`) in the commands by the name of the ethernet interface of yours
-***And to know the name of the interface run this***
-(`nmcli`)
-
-_the name will normally begine with e (stands for ethernet)_
-
----
