@@ -108,10 +108,16 @@ IF you can't change the display resloution then update the drivers of the displa
 
 ---
 
-##  The Golden Rule: The WiFi Trap
+## The WiFi Trap
 **Never attempt to bridge a WiFi card (`wlp0s20f3`).**
 WiFi is a "secure tunnel" that only allows **one** MAC address at a time. If the VM tries to send its identity through your WiFi card, the router assumes it's a hack and kills the connection. **Always use a cable for bridging!**
 
 ---
+### At the end run this:
+(`nmcli con show`)
+* you will see something like this:-
+
+![nmcli](images/nmcli-con-show.png)
+
 
 
