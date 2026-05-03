@@ -101,15 +101,11 @@ IF you can't change the display resloution then update the drivers of the displa
 **The (`drivers.zip`) file that i attached in this repo has both the `NetKVM` (for network card) and the `qxldod` (for display adapter) folders**
 
 ---
+* 
 
-## ⚠️ Troubleshooting & Common Errors
 
-###  No Internet Flow
-Run the "Switchboard Check" in your Linux terminal:
-```bash
-bridge link
-```
-* **The Check:** You should see both `enp7s0` and `vnet0` listed with `master br0 state forwarding`. If you see this, the "electricity" is flowing.
+
+
 
 ---
 
