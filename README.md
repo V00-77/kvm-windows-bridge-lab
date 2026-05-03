@@ -122,7 +122,7 @@ WiFi is a "secure tunnel" that only allows **one** MAC address at a time. If the
 
 * Your ethernet connection on the VM will look like this:-
 
-[ethernet-on-the-vm](images/the-connection-on-the-vm.png)
+![ethernet-on-the-vm](images/the-connection-on-the-vm.png)
 
 * The _IP address_ on the VM should be ***different*** from the host's _IP address_.
 
