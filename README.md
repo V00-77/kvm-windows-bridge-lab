@@ -115,7 +115,8 @@ WiFi is a "secure tunnel" that only allows **one** MAC address at a time. If the
 ---
 
 # At the end run this:
-(`nmcli con show`)
+***(`nmcli con show`)***
+
 ## You will see something like this:-
 
 ![nmcli](images/nmcli-con-show.png)
