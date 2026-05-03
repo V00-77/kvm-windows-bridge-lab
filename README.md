@@ -129,4 +129,6 @@ WiFi is a "secure tunnel" that only allows **one** MAC address at a time. If the
 
 ![the-ip-addresses](images/the-ip-on-both-(host-&-vm).png)
 
+---
+
 
