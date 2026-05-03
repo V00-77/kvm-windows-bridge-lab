@@ -114,17 +114,17 @@ WiFi is a "secure tunnel" that only allows **one** MAC address at a time. If the
 
 ---
 
-### At the end run this:
+# At the end run this:
 (`nmcli con show`)
-* You will see something like this:-
+## You will see something like this:-
 
 ![nmcli](images/nmcli-con-show.png)
 
-* Your ethernet connection on the VM will look like this:-
+## Your ethernet connection on the VM will look like this:-
 
 ![ethernet-on-the-vm](images/the-connection-on-the-vm.png)
 
-* The _IP address_ on the VM should be ***different*** from the host's _IP address_.
+## The _IP address_ on the VM should be ***different*** from the host's _IP address_.
 
 ![the-ip-addresses](images/the-ip-on-both-(host-&-vm).png)
 
