@@ -75,8 +75,7 @@ sudo nmcli con add type ethernet slave-type bridge con-name br0-port ifname enp7
 3. Set **Network Source** to `Bridge device...`.
 4. Type **`br0`** into the Device Name field.
 * **The Logic:** This is like taking a virtual Ethernet cable from your Windows 11 VM and plugging it into a spare port on your Virtual Switch (`br0`).
-* 
-[VM's NIC settings details Screenshot](images/VM's NIC settings details.png)
+* [VM's NIC settings details Screenshot](images/VM's NIC settings details.png)
 
 ---
 
