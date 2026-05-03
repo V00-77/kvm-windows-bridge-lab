@@ -101,11 +101,9 @@ IF you can't change the display resloution then update the drivers of the displa
 **The (`drivers.zip`) file that i attached in this repo has both the `NetKVM` (for network card) and the `qxldod` (for display adapter) folders**
 
 ---
-* 
 
-
-
-
+### Your display and network adapters on the VM should now have no yellow marks like this:-
+![Device-manager](images/vm-network-and-display-Adapters.png)
 
 ---
 
