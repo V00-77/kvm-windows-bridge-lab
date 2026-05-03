@@ -87,7 +87,7 @@ After that if the internet didn't work on the VM then follow step 4
 ## Step 4: The Windows Driver "An easy way"   ***(Optional)***
 
 ### How to install via Folder/USB:
-1. Download ![drivers.zip](drivers/drivers.zip) to a USB drive and connect it to the VM to take the file from it
+1. **Download:** Click on [drivers.zip](drivers.zip) and then select **"View raw"** (or the Download icon) to save the files and put them on a usb drive and plug it out then in agian while the VM is running to take the files from it
 2. Open **Device Manager** in Windows.
 3. Right-click the **Ethernet Controller** (with the yellow warning sign).
 4. Select **Update Driver** -> **Browse my computer for drivers**.
