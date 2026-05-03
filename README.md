@@ -103,7 +103,7 @@ IF you can't change the display resloution then update the drivers of the displa
 ---
 
 ### Your display and network adapters on the VM should now have no yellow marks like this:-
-  ![vm-network-and-display-Adapters](images/vm-network-and-display-Adapters.png)
+  ![vm-network-and-display-adapters](images/vm-network-and-display-adapters.png)
 
 ---
 
