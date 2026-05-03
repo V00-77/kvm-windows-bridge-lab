@@ -75,7 +75,7 @@ sudo nmcli con add type ethernet slave-type bridge con-name br0-port ifname enp7
 3. Set **Network Source** to `Bridge device...`.
 4. Type **`br0`** into the Device Name field.
 * **The Logic:** This is like taking a virtual Ethernet cable from your Windows 11 VM and plugging it into a spare port on your Virtual Switch (`br0`).
-* ![vm-nic-settings-details-Screenshot](images/vm-nic-settings-details.png)
+ ![vm-nic-settings-details-Screenshot](images/vm-nic-settings-details.png)
 
 ---
 
@@ -103,7 +103,7 @@ IF you can't change the display resloution then update the drivers of the displa
 ---
 
 ### Your display and network adapters on the VM should now have no yellow marks like this:-
-* ![Device-manager](images/vm-network-and-display-Adapters.png)
+  ![vm-network-and-display-Adapters](images/vm-network-and-display-Adapters.png)
 
 ---
 
