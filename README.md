@@ -48,7 +48,9 @@ sudo nmcli con modify br0 ipv4.method disabled
 
 ### Note:
 Before going to **step 2** _Run this:_ (`nmcli con show`)  IF you saw something similar to this line:
-***`Wired connection 1  	04b0e...  	ethernet  	--`***  => __Then go to **step 2**__
+          ***`Wired connection 1  	04b0e...  	ethernet  	--`***  => 
+          
+          __Then go to **step 2**__
 
 ---
 
